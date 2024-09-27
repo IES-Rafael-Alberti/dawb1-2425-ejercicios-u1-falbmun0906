@@ -4,4 +4,8 @@
 n = int(input("Introduce el primer número: "))
 m = int(input("Introduce el segundo número: "))
 
+while m==0:
+    print("La división por cero no es posible.")
+    m = int(input("Introduce otro número: "))
+
 print("La división de", n,"entre",m,"da un cociente",int(n / m),"y un resto",n % m)
