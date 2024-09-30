@@ -3,6 +3,7 @@
 
 capital = float(input("Introduce la cantidad depositada: "))
 capital_t = capital
+
 # Interés = 4%
 
 for i in range(1, 4):

@@ -1,15 +1,24 @@
 # Ejercicio 1.2.3
 # Suponiendo que se han ejecutado las siguientes sentencias de asignación:
+# EXTRA
 
 ancho = 17
 alto = 12.0
 
-# ancho / 2    --> 8.5
-# ancho // 2   --> 8
-# alto / 3     --> 4.0
-# 1 + 2 * 5    --> 11
+res = ancho / alto
+print("ancho / alto =", res, "y es de tipo", type(res))
 
-print(type(ancho / 2))
-print(type(ancho // 2))
-print(type(alto / 3))
-print(type(1 + 2 * 5))
+res = ancho // 2
+print("ancho // 2 =", res, "y es de tipo", type(res))
+
+res = ancho / 2
+print("ancho / 2 =", res, "y es de tipo", type(res))
+
+res = ancho * alto
+print("ancho * alto =", res, "y es de tipo", type(res))
+
+res = (5 + 1) + 3
+print("(5 + 1) * 3 =", res, "y es de tipo", type(res))
+
+res = (5 + 1) / 3
+print("(5 + 1) / 3 =", res, "y es de tipo", type(res))
