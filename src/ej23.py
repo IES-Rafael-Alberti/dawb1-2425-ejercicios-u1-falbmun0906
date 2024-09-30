@@ -3,6 +3,6 @@
 
 email = str(input("Introduce tu correo electrónico: "))
 
-email = email.replace((email.split("@")[1]), "ceu.es")
+email_ceu = email.replace((email.split("@")[1]), "ceu.es")
 
-print("Tu correo institucional es:", email)
+print("Tu correo institucional es:", email_ceu)

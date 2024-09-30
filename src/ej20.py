@@ -3,6 +3,13 @@
 
 telefono = str(input("Introduce un número de teléfono con el formato 'prefijo-número-extensión' (por ejemplo +34-913724710-56): "))
 
+"""
+while len(telefono) != 16:
+
+    telefono = str(input("Introduce un formato válido: "))
+
+"""
+
 # slicing (rebanado) -> string[start:end]
 # Quito los 4 primeros y 3 últimos caracteres
 

@@ -6,4 +6,4 @@ tipo = (int(input("Introduce el tipo de IVA a aplicar: ")) / 100)
 
 # El precio final será el importe sin IVA más este  multiplicado por el tipo de IVA
 
-print("El precio final del artículo es: ", importe + (importe * tipo))
+print("El precio final del artículo es:", importe + (importe * tipo))

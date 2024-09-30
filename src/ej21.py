@@ -5,7 +5,8 @@ frase = str(input("Introduce una frase: "))
 
 print(frase[::-1])
 
-""" Con reversed() y ''.join()
+""" 
+## Con reversed() creo un iterable y con ''.join() uno los elementos en una cadena.
 
 frase_invertida = ''.join(reversed(frase))
 

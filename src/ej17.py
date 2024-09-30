@@ -4,5 +4,12 @@
 nombre = str(input("Introduce tu nombre: "))
 n = int(input("Introduce el número de veces que quieres que se repita: "))
 
+print(f"{nombre}\n" * n)
+
+"""
+# Con bucle for
+
 for i in range(1,n + 1):
     print(nombre)
+
+"""
