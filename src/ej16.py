@@ -6,4 +6,4 @@ PRECIO_PAN_ND = PRECIO_PAN * 0.40
 
 numero_pan_nd = int(input("Introduce el número de barras de pan que no son del día: "))
 
-print(f"El precio del pan es de {PRECIO_PAN:.2f}€.\nSe aplicará un descuento del 60% a las barras que no son del día.\nEl importe total a pagar es de {numero_pan_nd * PRECIO_PAN_ND}€.")
+print(f"El precio del pan es de {PRECIO_PAN:.2f}€.\nSe aplicará un descuento del 60% a las barras que no son del día.\nEl importe total a pagar es de {(numero_pan_nd * PRECIO_PAN_ND):.2f}€.")
