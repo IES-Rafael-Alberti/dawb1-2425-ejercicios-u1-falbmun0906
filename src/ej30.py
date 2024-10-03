@@ -12,15 +12,20 @@ def serie(numero_inicial, numero_final, incremento):
         else:
             incremento = int(input("Introduce un valor del incremento válido: "))
 
-    serie = list(range(numero_inicial, numero_final + 1))
+    if numero_inicial > numero_final:
+        serie = list(range(numero_inicial, numero_final - 1, -incremento))
+    else:
+        serie = list(range(numero_inicial, numero_final + 1, incremento))
+    
     serie = "-".join(map(str, serie))
-    return f"{serie}"
+    return serie
 
 def main():
+
     numero_inicial = int(input("Introduce el número inicial de la serie: "))
     numero_final = int(input("Introduce el número final de la serie: "))
     incremento = int(input("Introduce el valor del incremento: "))
-    print(serie(numero_inicial, numero_final, incremento))
+    print(f"SERIE ==> {serie(numero_inicial, numero_final, incremento)}")
 
 if __name__ == "__main__":
     main()

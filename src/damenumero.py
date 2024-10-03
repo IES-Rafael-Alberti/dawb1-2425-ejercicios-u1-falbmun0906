@@ -9,7 +9,7 @@ def dame_entero():
     cadena = input("Introduce un número entero: ")
 
     while not comprobar_entero(cadena):
-        cadena = input("E so no es un entero.\nIntrodúcelo bien: ")
+        cadena = input("Eso no es un entero.\nIntrodúcelo bien: ")
 
     return int(cadena)
 
