@@ -8,7 +8,7 @@ def salario(horas, coste):
 def main():
     horas = int(input("Horas de trabajo: "))
     coste = int(input("Coste por hora: "))
-    print("Importe total: {}".format(salario(horas, coste)))
+    print(f"Importe total: {salario(horas, coste)}")
 
 if __name__ == "__main__":
     main()
