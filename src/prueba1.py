@@ -19,7 +19,7 @@ def comprobar_numero(numero1, numero2):
 
     return (numero1).isdigit() or (numero1).startswith("-") and (numero1)[1:].isdigit() and (numero2).isdigit() or (numero2).startswith("-") and (numero2)[1:].isdigit()
 
-def comparar(numero1, numero2):
+def comparar_numero(numero1, numero2):
 
     if numero1 > numero2:
         return numero1
