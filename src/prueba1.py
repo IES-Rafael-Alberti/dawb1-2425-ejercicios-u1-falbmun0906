@@ -17,7 +17,7 @@ def comprobar_numero(numero1, numero2):
     numero1 = numero1.strip()
     numero2 = numero2.strip()
 
-    return (numero1).isdigit() or (numero1).startswith("-") and (numero1)[1:].isdigit() and (numero2).isdigit() or (numero2).startswith("-") and (numero2)[1:].isdigit()
+    return ((numero1).isdigit() or (numero1).startswith("-") and (numero1)[1:].isdigit()) and ((numero2).isdigit() or (numero2).startswith("-") and (numero2)[1:].isdigit())
 
 def comparar_numero(numero1, numero2):
 
