@@ -32,7 +32,7 @@ def main():
 
     numero1, numero2 = dame_numero()
 
-    print(f"El número mayor es: {comparar(numero1, numero2)}")
+    print(f"El número mayor es: {comparar_numero(numero1, numero2)}")
 
 if __name__ == "__main__":
     main()
