@@ -1,12 +1,6 @@
 # Escribir una función que reciba una muestra de números en una lista y devuelva un diccionario con su media, varianza y desviación típica.
 
-# def desviacion(numeros):
-
-#     for i in numeros():
-
-
-
-# def varianza():
+import math
 
 def calculo_media(numeros):
     
@@ -33,13 +27,23 @@ def calculo_varianza(numeros):
 
 def calculo_desviacion(numeros):
 
-    
+    desviacion = math.sqrt(calculo_varianza(numeros))
+
+    return desviacion
 
 def diccionario(numeros):
 
     media = calculo_media(numeros)
     varianza = calculo_varianza(numeros)
-    desviacion = calculo_deviacion(numeros)
+    desviacion = calculo_desviacion(numeros)
+
+    diccionario_estadistico = {
+        "Media":{media},
+        "Varianza":{varianza},
+        "Desviación":{desviacion}
+    }
+
+    return diccionario_estadistico
 
 def main():
 

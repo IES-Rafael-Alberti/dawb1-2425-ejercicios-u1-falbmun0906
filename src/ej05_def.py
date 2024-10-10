@@ -6,14 +6,14 @@
 
 def precio_final(importe, tipo):
 
-    print(f"El importe tras IVA es: {importe + (importe * tipo):.2f}")
+    return importe + (importe * tipo)
 
 def main():
 
     importe = float(input("Introduce el importe sin IVA: "))
     tipo = (int(input("Introduce el tipo de IVA a aplicar: ")) / 100)
 
-    precio_final(importe, tipo)
+    print(f"El importe tras IVA es: {precio_final(importe, tipo):.2f}")
 
 if __name__ == "__main__":
     main()
