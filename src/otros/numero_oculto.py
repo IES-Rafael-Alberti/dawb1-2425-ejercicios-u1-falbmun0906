@@ -4,8 +4,9 @@ def rango():
     limites = input("Introduce el rango (X-Y): ")
     
     # VALIDACIÓN
+    salir = False
 
-    while True:
+    while not salir:
         if limites.count("-") == 1:
             try:
                 limites = list(map(int, limites.split("-")))
@@ -13,12 +14,14 @@ def rango():
                     limites[0], limites[1] = limites[1], limites[0]
                 print(f"Rango: {limites}")
                 
-                return limites
+                salir = True
 
             except ValueError:
                 limites = input("**ERROR** Formato incorrecto. Por favor, inténtalo de nuevo (X-Y): ")
         else:
             limites = input("**ERROR** Formato incorrecto. Por favor, inténtalo de nuevo (X-Y): ")
+            
+    return limites
 
 def aleatorio():
     limites = rango()
@@ -27,16 +30,20 @@ def aleatorio():
     return ran_num, limites
 
 def dame_numero(limites):
-    while True:
+    salir = False
+
+    while not salir:
         try:
             numero = int(input(f"Introduce un número entre {limites[0]} y {limites[1]}: "))
             if numero > limites[1] or numero < limites[0]:
                 print("El número introducido está fuera de los límites.")
                 continue
             else:
-                return numero
+                salir = True
         except:
             print("**ERROR** Debes introducir un número entero.")
+    
+    return numero
 
 def calcular_distancia(longitud_rango, ran_numero, numero):
     distancia_max = longitud_rango
