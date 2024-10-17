@@ -20,7 +20,9 @@ def comprobar_int(rango):
     return rango
 
 def aleatorio():
-    numero_aleatorio = random.randint(limites())
+    rango = limites()
+    numero_aleatorio = random.randint(rango[0], rango[1])
+
 
     return numero_aleatorio
 
