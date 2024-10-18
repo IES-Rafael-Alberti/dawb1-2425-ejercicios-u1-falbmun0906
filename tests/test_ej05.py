@@ -5,7 +5,7 @@ import os
 
 sys.path.insert(0, os.path.abspath(os.path.join(os.path.dirname(__file__), '..')))
 
-from src.ej05_def import precio_final
+from src.ej05_def2 import precio_final
 
 @pytest.mark.parametrize(
         "input_x, input_y, expected",

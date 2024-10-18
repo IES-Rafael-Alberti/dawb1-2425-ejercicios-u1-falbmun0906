@@ -26,7 +26,7 @@ def calcular_divisores():
 
     for i in range(1, numero + 1):
         if numero % i == 0:
-            divisores.append(numero / i)
+            divisores.append(i)
 
     return numero, divisores
 
